@@ -23,7 +23,9 @@ RUN apt-get update && apt-get install -y \
     npm \
     optipng \
     pngquant \
-    vim
+    vim \
+    postgresql \
+    postgresql-contrib
 RUN npm install -g svgo
 RUN bundle config set path vendor/bundle/ && bundle install
 RUN gem install foreman
